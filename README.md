@@ -18,14 +18,15 @@ WaterLog는 사용자가 일일 물 섭취량을 쉽게 기록하고, 설정한 
 메인 화면 중앙에 커스텀 CircularProgressView를 배치하여, 목표 대비 현재 섭취량을 원형 그래프와 퍼센티지(%)로 한눈에 보여준다.
 섭취량 추가 시 그래프가 부드러운 애니메이션과 함께 즉시 업데이트
 
-4. 시간별 기록 리스트 (Timestamped List)
+4) 시간별 기록 리스트 (Timestamped List)
 메인 화면 하단의 List에 오늘 물을 마신 모든 기록이 시간 역순(최신순)으로 표시 ([14:35] - 250ml)
 WaterIntakeRecord 모델을 사용하여 개별 섭취 시간과 용량을 모두 저장
 항목을 스와이프하여 개별 기록을 삭제할 수 있다. (.onDelete)
 
-5. 일일 초기화 기능 (Daily Reset)
+5) 일일 초기화 기능 (Daily Reset)
 앱 실행 시(onAppear) 마지막 기록의 날짜와 오늘 날짜를 비교
 날짜가 변경되면(!isDateInToday) 모든 섭취 기록(intakeRecords)을 자동으로 비워 새로운 날을 시작
+
 
 3. 기술 스택 (Tech Stack)
 UI Framework: SwiftUI
@@ -42,8 +43,7 @@ Language: Swift
 Asynchronous Programming: Combine (for ObservableObject)
 
 4. 프로젝트 구조 (Project Structure)
-
-본 프로젝트는 MVVM 아키텍처에 따라 파일을 그룹화했습니다.
+본 프로젝트는 MVVM 아키텍처에 따라 파일을 그룹화
 
 WaterLog/
 ├── WaterLogApp.swift       (앱 진입점, ViewModel 초기화)
