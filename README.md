@@ -1,10 +1,10 @@
 # WaterLog: 물 마시기 트래커 SwiftUI 앱
 AI와의 협업을 통해 개발한 SwiftUI 기반 일일 물 섭취량 추적 앱입니다. (중간고사 과제)
 
-1. 앱 소개 (Introduction)
+** 1. 앱 소개 (Introduction)
 WaterLog는 사용자가 일일 물 섭취량을 쉽게 기록하고, 설정한 목표를 달성할 수 있도록 도와주는 간단하고 직관적인 건강 관리 앱입니다. MVVM 아키텍처를 기반으로 SwiftUI를 사용하여 개발
 
-2. 주요 기능 (Key Features)
+** 2. 주요 기능 (Key Features)
 본 앱은 과제에서 요구하는 5가지 필수 기능을 구현
 
 1) 목표 섭취량 설정 (Goal Setting)
@@ -27,8 +27,7 @@ WaterIntakeRecord 모델을 사용하여 개별 섭취 시간과 용량을 모�
 앱 실행 시(onAppear) 마지막 기록의 날짜와 오늘 날짜를 비교
 날짜가 변경되면(!isDateInToday) 모든 섭취 기록(intakeRecords)을 자동으로 비워 새로운 날을 시작
 
-
-3. 기술 스택 (Tech Stack)
+** 3. 기술 스택 (Tech Stack)
 UI Framework: SwiftUI
 Architecture: MVVM (Model-View-ViewModel)
 State Management:
